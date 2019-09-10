@@ -1,3 +1,4 @@
+import array.ExchangePosition;
 import gcd.Gcd;
 import linked.SingleLinkedList;
 
@@ -21,7 +22,14 @@ public class Main {
 
 //        System.out.println(sll.findByValue(1));
 
-        Gcd.calcGcd(12, 16);
+//        Gcd.calcGcd(12, 16);
 
+        Integer[] i = new Integer[]{1, 2, 3, 4, 5};
+        ExchangePosition<Integer> ep = new ExchangePosition<Integer>();
+        Integer[] result = ep.exchange(i);
+
+        for (int j = 0; j < result.length; j++) {
+            System.out.println(result[j]);
+        }
     }
 }
